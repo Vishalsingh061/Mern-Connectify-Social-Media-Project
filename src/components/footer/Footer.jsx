@@ -1,0 +1,33 @@
+import React from 'react';
+import { Link } from 'react-router-dom';
+import classes from './footer.module.css';
+
+const Footer = () => {
+    return (
+        <footer className={classes.footer}>
+            <div className={classes.container}>
+                <div className={classes.logo}>
+                    <Link to="/">Connectify</Link>
+                </div>
+                <div className={classes.links}>
+                    <Link to="/about">About Us</Link>
+                    <Link to="/contact">Contact</Link>
+                    <Link to="/privacy">Privacy Policy</Link>
+                    <Link to="/terms">Terms of Service</Link>
+                </div>
+                <div className={classes.socials}>
+                    <a href="https://facebook.com" target="_blank" rel="noopener noreferrer">Facebook</a>
+                    <a href="https://twitter.com" target="_blank" rel="noopener noreferrer">Twitter</a>
+                    <a href="https://instagram.com" target="_blank" rel="noopener noreferrer">Instagram</a>
+                    <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+                </div>
+                <div className={classes.copyright}>
+                    &copy; 2024 Connectify. All rights reserved.
+                </div>
+            </div>
+        </footer>
+    );
+};
+
+export default Footer;
+
